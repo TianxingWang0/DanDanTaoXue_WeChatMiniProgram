@@ -1,0 +1,31 @@
+<!--pages/upload/index.wxml-->
+
+<view class="section">
+ <input maxlength="20" value='{{name}}' placeholder="书名" bindinput ="nameInput"></input>
+</view>
+<view class="section">
+ <input placeholder-style="color:red" value='{{price}}' type="digit" placeholder="价格" bindinput="priceInput"></input>
+</view>
+<view class="section">
+ <input type="digit" value='{{seller}}' placeholder="联系方式" bindinput="sellerInput"></input>
+</view>
+<view class="section">
+ <input type="digit" value='{{info}}' placeholder="ta很懒什么都没有留下" bindinput="infoInput"></input>
+</view>
+
+<text class='yes-upload'>上传一些照片吧</text>
+<view class="picture_list">
+  <view wx:for="{{upload_picture_list}}" class="picture_item" wx:key="{{index}}">
+    <image wx:if="{{item.upload_percent < 100}}" src="{{item.path}}" mode="aspectFill"></image>
+    <image wx:if="{{item.upload_percent == 100}}" src="{{item.path_server}}" mode="aspectFill"></image>
+    <view class="upload_progress" wx:if="{{item.upload_percent < 100}}" data-index="{{index}}" bindtap="previewImg">{{item.upload_percent}}%</view>
+    <text class='del' bindtap='deleteImg' data-src='{{image}}' style='display:{{isDel}}' data-index="{{index}}">×</text>
+  </view>
+
+  <view class='picture_item'>
+    <view class="add-image" bindtap='uploadpic'>
+      <text>+</text>
+    </view>
+  </view>
+</view>
+<button bindtap='uploadimage' class='yes-upload'>上传商品</button>

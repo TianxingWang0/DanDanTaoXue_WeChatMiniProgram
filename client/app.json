@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/start/start",
+        "pages/goods-datails/index",
+        "pages/upload/index",
+        "pages/my/index"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "旦旦淘学",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#6e6d6b",
+        "selectedColor": "#e64340",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "box-shadow": "0 0 6px 0",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/nav/home-off.png",
+                "selectedIconPath": "images/nav/home-on.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/upload/index",
+                "iconPath": "images/nav/upload-off.png",
+                "selectedIconPath": "images/nav/upload-on.png",
+                "text": "上传"
+            },
+            {
+                "pagePath": "pages/my/index",
+                "iconPath": "images/nav/my-off.png",
+                "selectedIconPath": "images/nav/my-on.png",
+                "text": "关于我们"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}
