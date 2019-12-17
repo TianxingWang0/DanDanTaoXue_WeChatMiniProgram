@@ -6,8 +6,8 @@ var Bucket = 'feiniaotao-1258589916';
 var Region = 'ap-shanghai';
 
 var cos = new COS({
-    SecretId: 'AKIDlTwDGF3f4PdkeGuzzjBZkgMyOcbZE5Te',
-    SecretKey: 'HLnfTJvIdGgQ0NhofSHvqZ4Xow12s1va',
+    SecretId: 'XXXXXXX',
+    SecretKey: 'XXXXXXXX',
 });
 
 Page({
